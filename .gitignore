@@ -1,8 +1,8 @@
-    *.aux
-    *.pdf
-    *.ps
-    *.log
-    *.dvi
-    *.toc
-    *.out
-    *.tex~
+*.aux
+*.pdf
+*.ps
+*.log
+*.dvi
+*.toc
+*.out
+*.tex~
