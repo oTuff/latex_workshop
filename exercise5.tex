@@ -1,0 +1,15 @@
+\section{exercise 5:}
+\url{https://www.overleaf.com/learn/latex/Questions/Tips_and_Tricks_for_Troubleshooting_LaTeX}
+\begin{description}
+	\item[Missing $\textbackslash$ inserted] Enclose text within dollar signs \$...\$ for inline math mode or use double dollar signs \$\$...\$\$ for displayed equations.
+	\item[Undefined control sequence] Check the spelling of the command and ensure that the correct package is included with \texttt{\textbackslash usepackage\{...\}}.
+	\item[Missing \texttt{\textbackslash begin\{document\}}] Add the \texttt{\textbackslash begin\{document\}} command before your content and make sure there is no content before the \texttt{\textbackslash documentclass\{...\}} declaration.
+	\item[Missing \texttt{\textbackslash end\{document\}}] Add the \texttt{\textbackslash end\{document\}} command at the end of your document, after all content and packages.
+	\item[Extra \}, or forgotten \textbackslash endgroup] Check your braces to ensure they are properly matched and balanced.
+	\item[File \textless filename\>.sty not found] Verify the file name and location, and make sure the package is installed on your system.
+	\item[Missing \texttt{\textbackslash caption}] Add a \texttt{\textbackslash caption\{\}} command within the float environment to provide a descriptive caption for the object.
+	\item[Too many unprocessed floats] Use the \texttt{\textbackslash clearpage} or \texttt{\textbackslash cleardoublepage} command to force LaTeX to process the floats, or use the float package with the H placement specifier to explicitly place floats.
+	\item[Overfull \textbackslash hbox or Underfull \textbackslash hbox] Adjust the text, add line breaks manually, or use the microtype package to improve spacing and justification.
+	\item[Missing \texttt{\textbackslash bibitem}] Ensure you have added a corresponding \texttt{\textbackslash bibitem\{\}} or \texttt{\@entry\{\}} in your bibliography file for each citation used in your document.
+\end{description}
+

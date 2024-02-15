@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    }
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\newcommand{\myauthor}{Oscar Tuff}
+\newcommand{\mytitle}{LaTeX Workshop}
+\newcommand{\mydate}{Februrary 15, 2024}
+\title{\mytitle}
+\author{\myauthor}
+\date{\mydate}
+
+\fancyhf{}
+\pagestyle{fancy}
+\begin{document}
+
+\fancyhead[L]{\myauthor \\ \mytitle}
+\fancyhead[C]{Center}
+\fancyhead[R]{Copenhagen Business Academy \\ \mydate }
+
+\fancyfoot[L]{Left Footer Content} \fancyfoot[C]{Center Footer Content}
+
+\fancyfoot[R]{\thepage\ / \pageref*{LastPage}}
+
+\input{intro}
+\input{exercise1.tex}
+\input{exercise2.tex}
+\input{exercise3.tex}
+\include{exercise4.tex}
+\input{exercise5.tex}
+\input{exercise6.tex}
+\input{exercise7.tex}
+
+\end{document}

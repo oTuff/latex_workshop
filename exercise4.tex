@@ -1,0 +1,25 @@
+\section{exercise 4:}
+\url{https://www.overleaf.com/learn/latex/Multi-file_LaTeX_projects}
+\\
+\textbackslash input is used to insert the content of another file into your main document as if you wrote the content directly in the main file. Here are its primary features:
+\begin{itemize}
+	\item You can use it anywhere in the document.
+
+	\item It does not produce a page break.
+	\item When the included file has an error, LaTeX points to the line number within that file.
+
+	\item You can nest \textbackslash input commands within files.
+
+	\item The included file should not contain any preamble.
+\end{itemize}
+
+\noindent
+\textbackslash include is used to insert larger pieces of content, like chapters, into your LaTeX document. It has these features:
+
+\begin{itemize}
+	\item It can only be used in the document body (not in the preamble).
+	\item It produces a page break before and after the included content.
+	\item When the included file has an error, LaTeX points to the line number within that file.
+	\item Nesting \textbackslash include commands is not possible and will result in an error.
+	\item It requires the \textbackslash includeonly command when working with large projects to speed up compilation.
+\end{itemize}
