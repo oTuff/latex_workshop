@@ -1,3 +1,16 @@
-
 \section{exercise 6:}
 \url{https://www.overleaf.com/learn/latex/Headers_and_footers}
+\textbf{setting variables for author, title and date to use them for header:}
+\\
+\textbackslash newcommand\{\textbackslash myauthor\}\{Oscar Tuff\}
+\\
+\textbackslash newcommand\{\textbackslash mytitle\}\{LaTeX Workshop\}
+\\
+\textbackslash newcommand\{\textbackslash mydate\}\{Februrary 15, 2024\}
+\textbackslash fancyhead[L]\{\textbackslash myauthor  \textbackslash \textbackslash  \textbackslash mytitle\}
+\\
+\textbackslash fancyhead[R]\{Copenhagen Business Academy  \textbackslash \textbackslash  \textbackslash mydate \}
+\\
+\textbf{to get page number and total number of pages:}
+\\
+\textbackslash fancyfoot[R]\{\textbackslash thepage\textbackslash  / \textbackslash pageref*\{LastPage\}\}
